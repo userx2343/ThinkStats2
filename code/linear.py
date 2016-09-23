@@ -21,7 +21,6 @@ def Summarize(estimates, actual=None):
     estimates: sequence of estimates
     actual: float actual value
     """
-    fake_var = 1
     mean = thinkstats2.Mean(estimates)
     stderr = thinkstats2.Std(estimates, mu=actual)
     cdf = thinkstats2.Cdf(estimates)
